@@ -9,24 +9,21 @@ export function Navbar() {
 
   const links = [
     { href: '/', label: 'Início' },
-    { href: '/#servicos', label: 'Serviços' },
-    { href: '/#portfolio', label: 'Portfólio' },
-    { href: '/dashboard', label: '📊 Dashboard' },
-    { href: '/#contacto', label: 'Contacto' },
+    { href: '/portfolio', label: 'Portfólio' },
+    { href: '/servicos', label: 'Servicos' },
+    { href: '/contacto', label: 'Contacto' },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-serif font-bold text-[#1A2744]">
               Meu<span className="text-[#C9A84C]">Site</span>
             </span>
           </Link>
 
-          {/* Links Desktop */}
           <div className="hidden md:flex items-center space-x-8">
             {links.map((link) => (
               <Link
@@ -42,7 +39,6 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* Botão Mobile */}
           <button
             className="md:hidden text-gray-600"
             onClick={() => setIsOpen(!isOpen)}
@@ -58,7 +54,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Menu Mobile */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}

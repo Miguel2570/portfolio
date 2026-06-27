@@ -6,7 +6,7 @@ export default defineConfig({
   name: 'default',
   title: 'Meu Site Premium',
 
-  projectId: 'SEU_PROJECT_ID',  // ← Substitua pelo seu
+  projectId: 'SEU_PROJECT_ID',
   dataset: 'production',
 
   plugins: [deskTool()],
