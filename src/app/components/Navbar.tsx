@@ -20,7 +20,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-serif font-bold text-[#1A2744]">
-              Meu<span className="text-[#C9A84C]">Site</span>
+              Sobre - <span className="text-[#C9A84C]">Miguel Tobias</span>
             </span>
           </Link>
 
